@@ -7,7 +7,7 @@ Saya juga mengumpulkan komentar YouTube dari tujuh video reportase Mata Najwa "[
 
 Tahapan dalam analisis data:
 * [Scraping dan analisis data dengan R](https://github.com/garnesian/Analisis-Sentimen-Twitter-dan-YouTube/blob/main/Ibu%20Kota%20Baru.R)
-*
+
 
 Data dalam analisis:
 * [Teks "Ibu Kota Baru" yang sudah dibersihkan](https://github.com/garnesian/Analisis-Sentimen-Twitter-dan-YouTube/blob/main/text_cleaned.txt)
