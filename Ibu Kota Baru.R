@@ -37,10 +37,10 @@ library(textdata) # to get sentiment libraries
 #mendaftarkan akun twitter dev 
 
 create_token(app = "ibu_kota_baru",
-             consumer_key = "xE6nVqMmGQSlhiOlm0Fs9oZYa",
-             consumer_secret = "p8OtfqsOsQdf8Sb29OZgK7draJBUl6CRJCnF9lPsel43lByo47",
-             access_token = "236702993-bBzXtpXRqi3LqeqfnncIJ4gyr5mIhPme2hEWqkjv",
-             access_secret = "te9INa1dV6ZcIuUSnwsW2M8RRfSbtfnrsa5zUqdudBz1K")
+             consumer_key = "........................",
+             consumer_secret = "..........................................",
+             access_token = "..............................................",
+             access_secret = "..............................................")
 
 
 #jika sudah, maka kita sudah bisa menggunakan package rtweet
@@ -153,7 +153,7 @@ ibukota_filter$row_num <- seq.int(nrow(ibukota_filter))
 text_sentiment <- ibukota_filter %>%
   unnest_tokens(word, text, token = "ngrams", n = 1)
 
-# Buka file sentimen (pastikan file sentimen sudah ada di direktori yang sama)
+# Buka file sentimen (pastikan file sentimen sudah ada di direktori yang sama, saya hanya import dataset ke environment)
 
 # Gabungkan file text_sentiment dengan sentiment_value
 
@@ -179,17 +179,19 @@ save_as_csv(sentiment_all, file_name = "Analisis_sentimen.csv", prepend_ids = TR
             fileEncoding = "UTF-8")
 
 
-# Getting Youtube Comments
+
+## Getting Youtube Comments
+
 
 # load the required packages
 library(tuber)
 library(tidyverse)
 
 # store the name of your Client ID in app_name variable 
-app_id <- "273572675922-fv2of7rf75b5fqrl8kcok547g5v4vg4b.apps.googleusercontent.com"
+app_id <- "........................................................."
 
 # store the Client secret in the app_secret variable 
-app_secret <- "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"
+app_secret <- "......................................"
 
 # authorize your app
 yt_oauth(app_id, app_secret, token = "")
@@ -313,7 +315,7 @@ rows_filter$row_num <- seq.int(nrow(rows_filter))
 youtube_sentiment <- rows_filter %>%
   unnest_tokens(word, textOriginal, token = "ngrams", n = 1)
 
-# Buka file sentimen (pastikan file sentimen sudah ada di direktori yang sama)
+# Buka file sentimen (pastikan file sentimen sudah ada di direktori yang sama, saya hanya import dataset ke environment)
 
 # Gabungkan file text_sentiment dengan sentiment_value
 
